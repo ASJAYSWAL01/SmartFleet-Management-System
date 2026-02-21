@@ -6,7 +6,7 @@ define('BASE_URL', 'http://localhost/fleetflow');
 
 // Database Configuration
 define('DB_HOST', 'localhost');
-define('DB_PORT', '3306');
+define('DB_PORT', '3307');
 define('DB_NAME', 'fleetflow');
 define('DB_USER', 'root');
 define('DB_PASS', '');

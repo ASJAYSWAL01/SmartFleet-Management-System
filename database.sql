@@ -163,3 +163,17 @@ INSERT INTO drivers (name, email, phone, license_number, license_expiry, license
 ('Amit Singh', 'amit@example.com', '+91-9876543212', 'DL-2020-009012', '2025-12-15', 'HTV', 'On Duty'),
 ('Deepak Verma', 'deepak@example.com', '+91-9876543213', 'DL-2022-003456', '2027-03-20', 'HTV', 'Off Duty'),
 ('Manoj Sharma', 'manoj@example.com', '+91-9876543214', 'DL-2018-007890', '2023-08-10', 'LTV', 'Suspended');
+
+
+INSERT INTO vehicle_costs (vehicle_id, trip_id, cost_type, amount, cost_date, description, notes, created_by, created_at) VALUES
+(1, 1, 'Fuel', 15807.50, '2026-02-21', 'Diesel refill for trip', 'Full tank', 1, NOW()),
+(2, NULL, 'Maintenance', 12000.00, '2026-02-10', 'Tire replacement and alignment', NULL, 1, NOW()),
+(3, NULL, 'Fuel', 2189.50, '2026-02-22', 'Petrol refill for vehicle', 'Top up', 1, NOW()),
+(4, NULL, 'Insurance', 45000.00, '2026-01-15', 'Annual vehicle insurance', NULL, 1, NOW()),
+(5, NULL, 'Toll', 750.00, '2026-02-18', 'Highway toll charges', NULL, 1, NOW()),
+(1, NULL, 'Maintenance', 4000.00, '2026-03-15', 'Suspension check', NULL, 1, NOW()),
+(2, NULL, 'Fuel', 6360.00, '2026-02-21', 'Diesel refill', NULL, 1, NOW()),
+(3, NULL, 'Registration', 5000.00, '2026-01-20', 'Annual vehicle registration', NULL, 1, NOW()),
+(4, NULL, 'Driver Pay', 8000.00, '2026-02-23', 'Driver salary for vehicle', NULL, 1, NOW()),
+(5, NULL, 'Misc', 1500.00, '2026-02-25', 'Vehicle cleaning and minor repairs', NULL, 1, NOW());
+
