@@ -165,15 +165,27 @@ INSERT INTO drivers (name, email, phone, license_number, license_expiry, license
 ('Manoj Sharma', 'manoj@example.com', '+91-9876543214', 'DL-2018-007890', '2023-08-10', 'LTV', 'Suspended');
 
 
-INSERT INTO vehicle_costs (vehicle_id, trip_id, cost_type, amount, cost_date, description, notes, created_by, created_at) VALUES
-(1, 1, 'Fuel', 15807.50, '2026-02-21', 'Diesel refill for trip', 'Full tank', 1, NOW()),
-(2, NULL, 'Maintenance', 12000.00, '2026-02-10', 'Tire replacement and alignment', NULL, 1, NOW()),
-(3, NULL, 'Fuel', 2189.50, '2026-02-22', 'Petrol refill for vehicle', 'Top up', 1, NOW()),
-(4, NULL, 'Insurance', 45000.00, '2026-01-15', 'Annual vehicle insurance', NULL, 1, NOW()),
-(5, NULL, 'Toll', 750.00, '2026-02-18', 'Highway toll charges', NULL, 1, NOW()),
-(1, NULL, 'Maintenance', 4000.00, '2026-03-15', 'Suspension check', NULL, 1, NOW()),
-(2, NULL, 'Fuel', 6360.00, '2026-02-21', 'Diesel refill', NULL, 1, NOW()),
-(3, NULL, 'Registration', 5000.00, '2026-01-20', 'Annual vehicle registration', NULL, 1, NOW()),
-(4, NULL, 'Driver Pay', 8000.00, '2026-02-23', 'Driver salary for vehicle', NULL, 1, NOW()),
-(5, NULL, 'Misc', 1500.00, '2026-02-25', 'Vehicle cleaning and minor repairs', NULL, 1, NOW());
+INSERT INTO drivers (name, email, phone, license_number, license_expiry, license_class, status) VALUES
+('Vikram Joshi', 'vikram@example.com', '+91-9876543215', 'DL-2022-011223', '2026-09-30', 'HTV', 'On Duty'),
+('Rahul Mehta', 'rahul@example.com', '+91-9876543216', 'DL-2021-015678', '2025-07-15', 'LTV', 'Off Duty'),
+('Nikhil Shah', 'nikhil@example.com', '+91-9876543217', 'DL-2020-021234', '2024-12-31', 'HTV', 'On Duty'),
+('Kiran Desai', 'kiran@example.com', '+91-9876543218', 'DL-2023-003789', '2027-05-20', 'LTV', 'Available'),
+('Ankit Verma', 'ankit@example.com', '+91-9876543219', 'DL-2021-009876', '2026-11-10', 'HTV', 'Off Duty'),
+('Ramesh Thakur', 'ramesh@example.com', '+91-9876543220', 'DL-2022-007654', '2026-03-30', 'LTV', 'Suspended'),
+('Manish Patel', 'manish@example.com', '+91-9876543221', 'DL-2023-002345', '2027-01-15', 'HTV', 'On Duty'),
+('Sanjay Kumar', 'sanjay@example.com', '+91-9876543222', 'DL-2020-011111', '2025-06-30', 'LTV', 'Available'),
+('Pratik Shah', 'pratik@example.com', '+91-9876543223', 'DL-2022-014567', '2026-08-20', 'HTV', 'On Duty'),
+('Harsh Mehta', 'harsh@example.com', '+91-9876543224', 'DL-2021-018901', '2025-12-31', 'LTV', 'Off Duty');
 
+
+INSERT INTO vehicles (license_plate, make, model, year, type, max_capacity, status, odometer) VALUES
+('FF-016-P', 'Tata', 'Signa 4018', 2022, 'Truck', 18000, 'Available', 32000.0),
+('FF-017-Q', 'Ashok Leyland', 'Captain 1215', 2021, 'Truck', 15000, 'Available', 45000.0),
+('FF-018-R', 'Mahindra', 'Jeeto', 2023, 'Van', 1200, 'Available', 15000.0),
+('FF-019-S', 'Toyota', 'HiAce', 2022, 'Van', 1400, 'In Shop', 23000.0),
+('FF-020-T', 'Eicher', 'Pro 3020', 2023, 'Truck', 10000, 'Available', 12000.0),
+('FF-021-U', 'Tata', 'Prima 4039', 2021, 'Truck', 25000, 'On Trip', 56000.0),
+('FF-022-V', 'Ashok Leyland', 'Boss 1420', 2022, 'Truck', 16000, 'Available', 33000.0),
+('FF-023-W', 'Mahindra', 'Supro Max', 2023, 'Van', 1500, 'Available', 11000.0),
+('FF-024-X', 'Toyota', 'HiAce Deluxe', 2021, 'Van', 1300, 'Available', 27000.0),
+('FF-025-Y', 'Eicher', 'Pro 3030', 2022, 'Truck', 12000, 'In Shop', 44000.0);
