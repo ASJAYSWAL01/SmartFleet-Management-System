@@ -1,5 +1,7 @@
 <?php
-require_once 'includes/auth_check.php';
+require_once 'config.php';                 // ✅ LOAD CONFIG FIRST
+require_once 'includes/auth_check.php';    // ✅ THEN AUTH CHECK
+
 $pageTitle = 'Dashboard';
 $db = getDB();
 
